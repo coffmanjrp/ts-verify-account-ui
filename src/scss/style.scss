@@ -1,0 +1,57 @@
+@import 'config';
+
+.container {
+  max-width: 1000px;
+  padding: 30px;
+  background-color: #fff;
+  border: 3px solid #000;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.code {
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+  }
+  margin: 1%;
+  width: 100px;
+  height: 120px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 4.6875rem;
+  font-weight: 300;
+  text-align: center;
+  -moz-appearance: textField;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &:valid {
+    border-color: #3498db;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.info {
+  display: inline-block;
+  padding: 10px;
+  max-width: 400px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  color: #777;
+  line-height: 1.25rem;
+}
+@media (max-width: 600px) {
+  .code {
+    &-container {
+      flex-wrap: wrap;
+    }
+    height: 80px;
+    max-width: 70px;
+    font-size: 3.75rem;
+  }
+}
